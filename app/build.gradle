@@ -4,6 +4,20 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('D:\\Projects\\werkules\\werkules.jks')
+            storePassword 'werkules'
+            keyAlias 'werkules'
+            keyPassword 'werkules'
+        }
+        release {
+            storeFile file('D:\\Projects\\werkules\\werkules.jks')
+            storePassword 'werkules'
+            keyAlias 'werkules'
+            keyPassword 'werkules'
+        }
+    }
     compileSdk 32
 
     defaultConfig {
@@ -14,14 +28,6 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
-    signingConfigs {
-        release {
-            keyAlias "werkules"
-            keyPassword "werkules"
-            storeFile file("D:/Projects/werkules/werkules.jks")
-            storePassword "werkules"
-        }
     }
 
     buildTypes {
@@ -45,7 +51,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.0'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
-    testImplementation 'junit:junit:4.+'
+    testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 }
