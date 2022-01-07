@@ -16,6 +16,15 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        release {
+            keyAlias = "werkules"
+            keyPassword = "werkules"
+            storeFile file("D:/Projects/werkules/werkules.jks")
+            storePassword = "werkules"
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
