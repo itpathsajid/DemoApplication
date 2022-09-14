@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
+    //This is test branch 1
 
     private fun setOnclickListener() {
         mBinding.chip1.setOnClickListener {
